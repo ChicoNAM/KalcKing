@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #A04747;
+    font-family: "Eagle Lake";
+    color: #343131;
+}
+
+.cl-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cl-logo-img {
+    height: 300px;
+    width: 300px;
+}
+
+.cl-h1-header {
+    color: #EEDF7A;
+}
+
+.cl-subtext-container {
+    display: flex;
+    justify-content: center;
+    color: #EEDF7A;
+    margin: 20px;
+}
+
+.cl-button-container-show {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.cl-button-container-hide {
+    display: none;
+}
+
+.cl-load-container-show {
+    display: flex;
+    justify-content: center;
+    color: #EEDF7A;
+}
+
+.cl-load-container-hide {
+    display: none;
+}
+
+.cl-save-button-container-show {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.cl-save-button-container-hide {
+    display: none;
+}
+
+.cl-display-container-show {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #D8A25E;
+    width: 600px;
+    height: 250px;
+    border: 10px solid #343131;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+.cl-display-container-hide {
+    display: none;
+}
+
+.cl-question-paragraph-show {
+    display: flex;
+    justify-content: center;
+}
+
+.cl-question-paragraph-hide {
+    display: none;
+}
+
+.cl-input-container-show {
+    display: flex;
+    justify-content: center;
+}
+
+.cl-input-container-hide {
+    display: none;
+}
+
+.cl-input-show {
+    font-size: 20px;
+    background: #EEDF7A;
+    color: #343131;
+    border-radius: 15px;
+    height: 30px;
+    width: 400px;
+    font-family: "Eagle Lake", sans-serif;
+    text-align: center;
+}
+
+.cl-answer-paragraph-show {
+    display: flex;
+    justify-content: center;
+}
+
+.cl-answer-paragraph-hide {
+    display: none;
+}
+
+button { 
+    align-self: center; 
+    border-radius: 24px; 
+    background-color: #EEDF7A; 
+    color: #A04747; 
+    padding: 8px 24px; 
+    font-size: 14px; 
+    font-weight: 700; 
+    text-decoration: none;
+}

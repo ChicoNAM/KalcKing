@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <title>KalcKing</title>
+</head>
+<body>
+    <div id="id-logo-container" class="cl-logo-container">
+        <img class="cl-logo-img" src="./asset/kalcking_transparent.png" alt="logo of kalcking">
+        <h1 id="id-h1-header" class="cl-h1-header">KalcKing</h1>
+    </div>
+    <div id="id-subtext-container" class="cl-subtext-container">
+        <p>Will you be the savior of the realm?</p>
+    </div>
+    <div id="id-button-container" class="cl-button-container-show">
+        <button onclick="giveTask();">Begin</button>
+        <button onclick="loadProgress();">Load</button>
+        <button onclick="resetProgress();">Reset</button>
+    </div>
+    <div id="id-load-container" class="cl-load-container-show">
+        <p id="id-load-paragraph" class="cl-load-paragraph-show"></p>
+    </div>
+    <div id="id-display-container" class="cl-display-container-hide">
+        <p id="id-question-paragraph" class="cl-question-paragraph-show"></p>
+        <div id="id-input-container" class="cl-input-container-show">
+            <form onsubmit="return checkInput();">
+                <input id="id-input" class="cl-input-show" type="text">
+            </form>
+        </div>
+        <p id="id-answer-paragraph" class="cl-answer-paragraph-show"></p>
+    </div>
+    <div id="id-save-button-container" class="cl-save-button-container-hide">
+        <button onclick="saveProgress();">Save</button>
+        <button onclick="quitGame();">Quit</button>
+    </div>
+
+    <script src="./kalcking.js"></script>
+</body>
+</html>
