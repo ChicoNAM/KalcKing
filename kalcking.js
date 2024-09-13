@@ -30,6 +30,8 @@ function loadProgress() {
         rounds = parseInt(localStorage.getItem("rounds"));
         level = parseInt(localStorage.getItem("level"));
     }
+    document.getElementById("id-load-container").classList.remove("cl-save-button-container-hide");
+    document.getElementById("id-load-container").classList.add("cl-save-button-container-show");
     document.getElementById("id-load-paragraph").innerHTML = "Level " + level + " Points " + points + " Rounds " + rounds + " have been succesfully loaded.";
 }
 
