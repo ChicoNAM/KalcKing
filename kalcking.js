@@ -188,8 +188,14 @@ function giveTask() {
         document.getElementById("id-display-container").classList.add("cl-display-container-hide");
         document.getElementById("id-save-button-container").classList.add("cl-save-button-container-hide");
         document.getElementById("id-save-button-container").classList.remove("cl-save-button-container-show");
+        document.getElementById("id-subtext-paragraph").innerHTML = "Congratulations Hero! You have saved the realm with your calculus prowess!"
+        document.getElementById("id-winning-container").classList.remove("cl-winning-container-hide");
+        document.getElementById("id-winning-container").classList.add("cl-winning-container-show");
+        document.getElementById("id-finish-container").classList.remove("cl-finish-container-hide");
+        document.getElementById("id-finish-container").classList.add("cl-finish-container-show");
+        document.getElementById("id-finish-button-container").classList.remove("cl-finish-button-container-hide");
+        document.getElementById("id-finish-button-container").classList.add("cl-finish-button-container-show");
     }
-
 
     document.getElementById("id-answer-paragraph").innerHTML = "Level " + level + " Points " + points + " Rounds " + rounds;
     document.getElementById("id-question-paragraph").innerHTML = output;
@@ -204,5 +210,18 @@ function quitGame() {
     document.getElementById("id-save-button-container").classList.remove("cl-save-button-container-show");
 }
 
+function newGame() {
+    document.getElementById("id-finish-container").classList.remove("cl-finish-container-show");
+    document.getElementById("id-finish-container").classList.add("cl-finish-container-hide");
+    document.getElementById("id-winning-container").classList.remove("cl-winning-container-show");
+    document.getElementById("id-winning-container").classList.add("cl-winning-container-hide");
+    document.getElementById("id-finish-container").classList.remove("cl-finish-container-show");
+    document.getElementById("id-finish-container").classList.add("cl-finish-container-hide");
+    document.getElementById("id-finish-button-container").classList.remove("cl-finish-button-container-show");
+    document.getElementById("id-finish-button-container").classList.add("cl-finish-button-container-hide");
+    resetProgress();
+    saveProgress();
+    giveTask();
 
+}
 

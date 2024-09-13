@@ -7,6 +7,10 @@ body {
     color: #343131;
 }
 
+p {
+    color: #EEDF7A;
+}
+
 .cl-logo-container {
     display: flex;
     justify-content: center;
@@ -63,6 +67,18 @@ body {
     display: none;
 }
 
+.cl-finish-button-container-show {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.cl-finish-button-container-hide {
+    display: none;
+}
+
 .cl-display-container-show {
     flex-direction: column;
     justify-content: center;
@@ -72,7 +88,7 @@ body {
     height: 250px;
     border: 10px solid #343131;
     border-radius: 15px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .cl-display-container-hide {
@@ -126,4 +142,31 @@ button {
     font-size: 14px; 
     font-weight: 700; 
     text-decoration: none;
+}
+
+button:hover {
+    background-color: #D8A25E;
+}
+
+.cl-winning-container-show {
+    display: flex;
+    justify-content: center;
+}
+
+.cl-winning-container-hide {
+    display: none;
+}
+
+.cl-img-winning {
+    border-radius: 50%;
+    height: 300px;
+}
+
+.cl-finish-container-show {
+    display: flex;
+    justify-content: center;
+}
+
+.cl-finish-container-hide {
+    display: none;
 }

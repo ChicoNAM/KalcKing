@@ -15,7 +15,7 @@
         <h1 id="id-h1-header" class="cl-h1-header">KalcKing</h1>
     </div>
     <div id="id-subtext-container" class="cl-subtext-container">
-        <p>Will you be the savior of the realm?</p>
+        <p id="id-subtext-paragraph" class="cl-subtext-paragraph">Will you be the savior of the realm?</p>
     </div>
     <div id="id-button-container" class="cl-button-container-show">
         <button onclick="giveTask();">Begin</button>
@@ -38,6 +38,19 @@
         <button onclick="saveProgress();">Save</button>
         <button onclick="quitGame();">Quit</button>
     </div>
+    <div id="id-winning-container" class="cl-winning-container-hide">
+        <img id="id-img-winning" class="cl-img-winning" src="./asset/win.png" alt="image of hero in a parade">
+    </div>
+    <div id="id-finish-container" class="cl-finish-container-hide">
+        <p id="id-finish-paragraph" class="cl-finish-paragraph-show">
+            Would you like to test your skills once more?
+        </p>
+    </div>
+    <div id="id-finish-button-container" class="cl-finish-button-container-hide">
+        <button onclick="newGame();">New Quest</button>
+        <button onclick="quitGame();">Quit</button>
+    </div>
+
 
     <script src="./kalcking.js"></script>
 </body>
